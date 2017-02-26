@@ -1,0 +1,188 @@
+
+<div id="contactFormContainer">
+       <div id="contactForm" style="display:none;">
+       	<div class="loader"></div>
+		<div class="bar"></div>
+           <form class="contactForm" name="cform" method="post" id="form">
+
+                   <input id="name" type="text" name="name" placeholder="Su nombre" autofocus required /></p>
+
+                   <input id="email" type="text" name="email" placeholder="Su email" required /></p>
+
+                   <textarea id="message" rows="" cols="" name="message" placeholder="Mensaje" required></textarea></p>
+
+                <input id="btncontacto" class="submit btn btn-default" type="button" name="submit" value="Enviar" onfocus="this.blur()"  />
+           </form>
+     </div>
+</div>
+
+
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/alertify.min.js"></script>
+
+<script>
+function ocultar(){
+      $("#eucookielaw").slideUp("slow");
+}
+
+$(document).ready(function(){
+
+function fillData(element, object){
+
+  for(obj in object) {
+      //console.log(obj, object[obj]);
+      element.append("<article><span class='periodo'>"+object[obj].date+"</span><h2>"+object[obj].title+"</h2><p class='subDetails'>"+object[obj].entity+"</p>");
+      if (object[obj].desc){
+        element.append("<p>"+object[obj].desc+"</p>");
+      }
+      element.append("</article>");
+  }
+
+}
+
+  i18n.init(function(t) {
+    // translate complete body
+    $("body").i18n();
+    var works = t("works", { returnObjectTrees: true });
+    var titles = t("titles", { returnObjectTrees: true });
+    var courses = t("courses", { returnObjectTrees: true });
+
+    fillData($("#works"), works);
+    fillData($("#titles"), titles);
+    fillData($("#courses"), courses);
+  });
+
+
+
+
+
+
+//function for contact form dropdown
+function contact() {
+	if ($("#contactForm").is(":hidden")){
+		$("#contactForm").slideDown("slow");
+		$("#backgroundPopup").css({"opacity": "0.7"});
+		$("#backgroundPopup").fadeIn("slow");
+	}else{
+		$("#contactForm").slideUp("slow");
+		$("#backgroundPopup").fadeOut("slow");
+	}
+};
+
+
+
+
+//run contact form when any contact link is clicked
+$(".contactar").click(function(){contact()});
+
+
+$("#btncontacto").click(function() {
+
+        //get input field values
+        var user_name       = $('input[name=name]').val();
+        var user_email      = $('#email').val();
+        var user_message    = $('#message').val();
+
+
+        //simple validation at client's end
+        //we simply change border color to red if empty field using .css()
+        var proceed = true;
+        if(user_name==""){
+            $('input[name=name]').css('border-color','red');
+            proceed = false;
+        }
+        if(user_email==""){
+            $('input[name=email]').css('border-color','red');
+            proceed = false;
+        }
+        if(user_message=="") {
+            $('textarea[name=message]').css('border-color','red');
+            proceed = false;
+        }
+
+        //everything looks good! proceed...
+        if(proceed)
+        {
+
+
+            //data to be sent to server
+            post_data = {'userName':user_name, 'userEmail':user_email, 'userMessage':user_message};
+
+            //Ajax post data to server
+            $.post('mailer.php', post_data, function(response){
+
+                //load json data from server and output message
+                if(response.type == 'error')
+                {
+                    //Error
+					alertify.alert("Error, no se ha podido enviar el mensaje, pongase en contacto por correo electronico en mjoseba@gmail.com");
+                }else{
+
+                    alertify.success("Mensaje enviado satisfactoriamente.");
+
+                    //reset values in all input fields
+                    $('#contact_form input').val('');
+                    $('#contact_form textarea').val('');
+
+                }
+
+
+				contact();
+
+            }, 'json');
+
+        }
+    });
+
+    //reset previously set border colors and hide all message on .keyup()
+    $("#contact_form input, #contact_form textarea").keyup(function() {
+        $("#contact_form input, #contact_form textarea").css('border-color','');
+        $("#result").slideUp();
+    });
+
+
+});
+</script>
+
+
+
+
+
+<!--analytics-->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-60199498-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+    <div id="footer" class="no-print">
+    	<div id="contenedorpie">
+        	<a href="http://portal.uned.es/" target="_blank">
+         		<img src="./imagenes/uned.jpg" alt="uned" />
+            </a>
+            <a href="http://www.wales.ac.uk/" target="_blank">
+            	<img src="./imagenes/University-of-Wales.jpg" alt="Wales university" />
+            </a>
+            <a href="http://www.zabalburu.hezkuntza.net/" target="_blank">
+            	<img src="./imagenes/zabalburu.jpg" alt="colegio zabalburu" />
+            </a>
+            <!--
+            <a href="http://www.pixelpro.es/" target="_blank">
+            	<img src="./imagenes/pixelpro.png" alt="pixelpro" />
+            </a>
+            <a href="http://www.ieeformacion.es/" target="_blank">
+            	<img src="./imagenes/IEE.jpg" alt="IEE" />
+        	  </a>
+            -->
+            <span align="absmiddle">Joseba Madrigal Marinas © 2014.</span>
+             <div class="clear"></div>
+        </div>
+    </div>

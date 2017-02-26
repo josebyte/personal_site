@@ -1,0 +1,15 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+Header set Access-Control-Allow-Origin "*"
+
+RewriteBase /
+
+RewriteEngine on
+
+#Poner www si viene sin ellas
+RewriteCond %{HTTP_HOST} ^josebamadrigal.com
+RewriteRule ^ http://www.josebamadrigal.com%{REQUEST_URI} [L,R=301]
+
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+

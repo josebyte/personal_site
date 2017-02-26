@@ -1,0 +1,278 @@
+{
+  "app": {
+    "title": "i18next"
+  },
+  "nav":{
+    "portafolio": "Portafolioa",
+    "recomendaciones": "Gomendio gutunak",
+    "imprimir": "Imprimatu",
+    "contactar": "Harremanetarako"
+  },
+  "home": {
+    "title": "Informatikako ingeniaria",
+    "academicinfo": "Prestakuntza akademikoa",
+    "now": "Orain",
+    "complementarytraining": "Bestalako hezkuntza",
+    "experience": "Lan esperientzia",
+    "knowledge": "Ezagutza",
+    "methodology": "Metodologiak",
+    "relationaldb": "Erlaziozko datu-baseak",
+    "nosql": "Big Data edo Ez-sql datu-baseak",
+    "serverside": "Server-side",
+    "clientside": "Client-side",
+    "frameworks": "Frameworks eta CMS",
+    "servers": "Servers",
+    "os": "Operative Systems",
+    "more": "Beste datuak",
+    "idiomas": "Hizkuntzak",
+
+    "relationaldbdesc" : "Markarik onena unibertsitaten, gainera esperientzia zabala PL-SQL-en, diseinu eta entitate-erlazio diagrametan.",
+    "oracle": "PL-SQL, FORMS eta REPORTS: 2 urteko esperientzia \"Steria Ibérica\"-an.",
+    "j2ee": "Experiencia laboral de año y medio y mejor nota de la carrera",
+    "php": "Gran cantidad de desarrollos en el portafolio.",
+    "asp": "Desarrollos en el portafolio.",
+    "htmlcss": "Dominio absoluto de ambas tecnologías, visible en el portafolio.",
+    "js": "Conocimientos avanzados y experiencia laboral, especialmente con las librerías JQuery, JQueryMobile, i18n, alertify, NodeJs, ExpressJS, Socket.io y AngularJs.",
+    "android": "Formación específica en (IEE instituto europeo de educación.",
+    "otroslenguajescliente": "Conocimientos de C#, Visual Basic.NET y SAP.",
+    "phonegap": "Curso formativo en PixelPro y proyecto fin de carrera realizados con este framework (2ª Mejor nota de la promoción.",
+    "drools": "Conocimientos básicos en el framework Drools (Inteligencia artificial y sistemas basados en reglas para JAVA).",
+    "linux": "Linux (Gestión de usuarios, Bind9, iptables, Raid, ssh, scripting), conocimientos y experiencia en consola.",
+    "3d": "Conocimientos básicos en modelado, animación y Unity3D.",
+    "mejor1": "Mejor nota de la carrera de mi promoción en: POO, Bases de datos, Programación Cliente-Servidor J2EE y Sistemas Operativos.",
+    "mejor2": "Segunda mejor nota de la carrera de mi promoción en: Proyecto fin de carrera, tecnología de los computadores y gestión de proyectos.",
+    "conducir": "Permiso de conducción B.",
+    "ingles": "Ingelesa",
+    "inglesdesc": "Ingles técnico correspondiente a la ingeniería.",
+    "euskera": "Euskera",
+    "euskeradesc": "Nivel medio-alto debido a haber cursado educación primaria y secundaria en modelo B (bilingüe)."
+
+  },
+
+
+  "methodologies" :{
+    "poo":{
+      "name": "OOP (Objektu bideratutako programazioa)",
+      "desc": "Unibertsitateko notarik onena."
+    },
+
+    "uml":{
+      "name": "UML analisia",
+      "desc": "Análisis de casos de uso, diagramas de clases, diagramas de interacción."
+    },
+
+    "scrum":{
+      "name": "SCRUM",
+      "desc": "Garapena arinako metodologia."
+    },
+
+    "mvc":{
+      "name": "MVC",
+      "desc": "Modelo Vista Controlador."
+    }
+  },
+
+
+
+  "works" :{
+    "near":{
+      "date" : "09/2014",
+      "title": "Web Developer and I+D research",
+      "entity": "Near technologies",
+      "desc" : "Desarrollo en el framework Atoms. Shadow DOM, Web components, NodeJS, MongoDB, Magento..."
+    },
+
+    "forodigital":{
+      "date" : "2010 - 08/2014",
+      "title": "Web aholkularia",
+      "entity": "ForoDigital",
+      "desc" : "Garapen y liderando un equipo de tres desarrolladores web en las siguientes tecnologías: ASP, PHP, J2EE ,JavaScript (Jquery, JqueryMobile, JqueryUI, AngularJS, NodeJS, ExpressJS), Mysql, MongoDB..."
+    },
+
+    "mirasoluciones":{
+      "date" : "2009 - 2010",
+      "title": "Consultor web",
+      "entity": "Mirasoluciones de gestión y consulting",
+      "desc" : "Departamento TIC con varias personas al cargo, gestionando, liderando, realizando la toma de requisitos y llevando a cabo el 100% del análisis y desarrollo de todo tipo de soluciones en JAVASCRIPT, PHP y J2EE a medida. Implementación de ERPs, configuración y gestión de servidores, seguridad y tunelizado en SSH."
+    },
+
+    "steria":{
+      "date" : "2007 - 2009",
+      "title": "Junior - Senior programatzailea  PLSQL-ORACLE",
+      "entity": "Steria Iberica",
+      "desc" : "Programador del área de promociones para el proyecto GREDISA (Eroski) en PL-SQL, Forms y Reports. A lo largo de los dos años realice análisis y desarrollo en estas plataformas, control de versiones y correcciones en diferentes JSPs de la aplicación J2EE de Eroski."
+    },
+
+    "cromion":{
+      "date" : "2007",
+      "title": "Junior programatzailea - SAP/Abap IV",
+      "entity": "Cromion IT"
+    },
+
+    "escurce":{
+      "date" : "2005",
+      "title": "Monitor de clases extraescolares de informática",
+      "entity": "Instituto Eskurtze"
+    }
+
+  }
+  ,
+  "titles":{
+
+    "uned":{
+      "date": "",
+      "title": "Software ingeniaritza masterra ikerketan.",
+      "entity": "UNED"
+    },
+
+    "wales":{
+      "date": "2011-2014",
+      "title": "BACHELOR OF SCIENCE HONOURS IN COMPUTING",
+      "entity": "Wales unibertsitatea",
+      "desc": "Issued by the European University of Wales (faithful to the new Bologna plan)."
+    },
+
+    "zabalburu":{
+      "date": "2005-2007",
+      "title": "Tecnico superior en desarrollo de aplicaciones informáticas",
+      "entity": "Zabalburu eskola"
+    }
+  },
+
+  "courses":{
+
+    "html52":{
+      "date": "01/2016",
+      "title": "HTML5.1x Part 2: Advanced Techniques for Designing HTML5 Apps",
+      "entity": "W3C",
+      "desc": "Curso completo con <a target='_blank' href='https://courses.edx.org/certificates/9a7dde1b73db4475876208aeaac99f72'>certificado</a> de HTML5 impartido por la W3C y distribuido en EDX."
+    },
+
+    "html51":{
+      "date": "12/2015",
+      "title": "HTML5.1x Part 1: HTML5 Coding Essentials and Best Practices",
+      "entity": "W3C",
+      "desc": "Curso completo con <a target='_blank' href='https://courses.edx.org/certificates/c2dff26fc005475fb7e5ee716cbdeaca'>certificado</a> de HTML5 impartido por la W3C y distribuido en EDX."
+    },
+
+    "activateappsmoviles":{
+      "date": "10/2015",
+      "title": "Programación de Apps Móviles",
+      "entity": "Universidad Complutense Madrid",
+      "desc": "<a target='_blank' href='./certificados/Activate 01 AppsMoviles.pdf'>Certificado</a> de superación del curso de desarrollo de Apps Móviles de 40 horas de duración."
+    },
+
+    "html5":{
+      "date": "07/2015",
+      "title": "HTML5.1x: Fundamentos de diseño web",
+      "entity": "W3C",
+      "desc": "Curso completo con <a target='_blank' href='./certificados/HTML5Certificate.pdf'>certificado verificado</a> de HTML5 impartido por la W3C y distribuido en EDX."
+    },
+
+    "GoogleTag":{
+      "date": "07/2015",
+      "title": "Google tag manager",
+      "entity": "Google",
+      "desc": "Curso oficial Google tag manager <a target='_blank' href='./certificados/googletag.png'>Certificación</a>. "
+    },
+
+    "nodejs":{
+      "date": "06/2015",
+      "title": "NodeJS y ExpressJS",
+      "entity": "Universidad Politecnica de Madrid.",
+      "desc": "NodeJS y ExpressJS "
+    },
+
+    "Android avanzado":{
+      "date": "06/2015",
+      "title": "Android avanzado",
+      "entity": "Ipartek",
+      "desc": "60h"
+    },
+
+    "Claves para Gestionar Personas":{
+      "date": "06/2015",
+      "title": "Claves para Gestionar Personas",
+      "entity": "IESE Business School (Navarra)",
+      "desc": "<a target='_blank' href='https://www.coursera.org/account/accomplishments/certificate/VDRYSUH9RH'>Certificado</a>"
+    },
+
+    "monodevcert":{
+      "date": "04/2015",
+      "title": "MongoDB Certified",
+      "entity": "MongoDB",
+      "desc": "Official MongoDB developer certification: <a href='https://university.mongodb.com/exams/display_certificate?csrfmiddlewaretoken=0VPqGcNRdvDvLiTnTSk3fV24YujyOrZu&license1=872&license2=056&license3=600'>Certificado</a>"
+    },
+
+    "mongodbacourse":{
+      "date": "03/2015",
+      "title": "MongoDB for Data base administrators",
+      "entity": "MongoDB-University",
+      "desc": "Certificado de superación del curso con una calificación entre el 5% mejor - Formación oficial MongoDB DBA.<a href='./certificadosMOngoDBCertifiedDBA.pdf'>Certificado</a>"
+    },
+
+    "monodevcourse":{
+      "date": "02/2015",
+      "title": "MongoDB for Node.js Developers",
+      "entity": "MongoDB-University",
+      "desc": "Certificado de superación del curso MongoDB-University obtenido unicamente por el 17% de los 5.152 inscritos - Formación oficial MongoDB University avanzada en la base de dato no relacional.<a href='./certificados/MongoDBCertificate.pdf'>Certificado</a>"
+    },
+
+    "firefoxos":{
+      "date": "2015",
+      "title": "Desarrollo en HTML5, CSS y Javascript de WebApps, incl. móviles FirefoxOS",
+      "entity": "Universidad Politecnica de Madrid.",
+      "desc": "Rango percentil de 94% - 50h de formación avanzada en programación y diseño de aplicaciones, utilizando HTML5, CSS y JavaScript.<a href='./certificados/firefoxapps.PDF'>Certificado</a>"
+    },
+
+    "phonegap":{
+      "date": "2014",
+      "title": "Phonegap",
+      "entity": "Pixelpro",
+      "desc": "6 meses de formación en curso online."
+    },
+
+    "android":{
+      "date": "2013",
+      "title": "ANDROID NATIVO",
+      "entity": "IEE - Instituto europeo para el empleo.",
+      "desc": "Sobresaliente - 300h de formación avanzada en programación nativa en Android.<a href='./certificados/androidnativo.PDF'>Certificado</a>"
+    },
+
+    "html5":{
+      "date": "2013",
+      "title": "HTML5 aurreratua",
+      "entity": "Pixelpro",
+      "desc": "3 meses de formación en curso online."
+    },
+
+    "scrum":{
+      "date": "2012",
+      "title": "METODOLOGIAS AGILES - SCRUM",
+      "entity": "Pixelpro",
+      "desc": "3 hilabeteko hezkuntza online ikastaroan."
+    },
+
+    "5ss":{
+      "date": "2008",
+      "title": "METODOLOGIA DE LAS 5s-s",
+      "entity": "Zabalburu eskola",
+      "desc": "3 meses de formación en curso online."
+    },
+
+    "oracle":{
+      "date": "2007",
+      "title": "Oracle PL/SQL Forms eta Reports",
+      "entity": "Consultec",
+      "desc": "Hilabeteko hezkuntza \"Steria Ibérica\"-an."
+    },
+
+    "sap":{
+      "date": "2007",
+      "title": "SAP",
+      "entity": "Cromion IT",
+      "desc": "3 hilabeteko hezkuntza."
+    }
+
+  }
+}
