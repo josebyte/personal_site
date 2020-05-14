@@ -29,7 +29,7 @@
     "php": "Gran cantidad de desarrollos en el portafolio.",
     "asp": "Desarrollos en el portafolio.",
     "htmlcss": "Dominio absoluto de ambas tecnologías, visible en el portafolio.",
-    "js": "Conocimientos avanzados y experiencia laboral, especialmente con las librerías JQuery, JQueryMobile, i18n, alertify, NodeJs, ExpressJS, Socket.io y AngularJs.",
+    "js": "Conocimientos avanzados y experiencia laboral, especialmente con las librerías JQuery, JQueryMobile, i18n, alertify, NodeJs, ExpressJS, Socket.io y Angular.",
     "android": "Formación específica en (IEE instituto europeo de educación.",
     "otroslenguajescliente": "Conocimientos de C#, Visual Basic.NET y SAP.",
     "phonegap": "Curso formativo en PixelPro y proyecto fin de carrera realizados con este framework (2ª Mejor nota de la promoción.",
@@ -83,7 +83,7 @@
       "date" : "2010 - 08/2014",
       "title": "Consultor web",
       "entity": "ForoDigital",
-      "desc" : "Desarrollando y liderando un equipo de tres desarrolladores web en las siguientes tecnologías: ASP, PHP, J2EE ,JavaScript (Jquery, JqueryMobile, JqueryUI, AngularJS, NodeJS, ExpressJS), Mysql, MongoDB..."
+      "desc" : "Desarrollando y liderando un equipo de tres desarrolladores web en las siguientes tecnologías: ASP, PHP, J2EE ,JavaScript (Jquery, JqueryMobile, JqueryUI, Angular, NodeJS, ExpressJS), Mysql, MongoDB..."
     },
 
     "mirasoluciones":{
@@ -116,12 +116,6 @@
   ,
   "titles":{
 
-    "uned":{
-      "date": "",
-      "title": "Master universitario en investigación en ingenieria del software y sistemas informaticos",
-      "entity": "UNED"
-    },
-
     "wales":{
       "date": "2011-2014",
       "title": "BACHELOR OF SCIENCE HONOURS IN COMPUTING",
@@ -137,12 +131,11 @@
   },
 
   "courses":{
-
-    "MEAN":{
-      "date": "02/2016",
-      "title": "MongoDB using the MEAN Stack",
-      "entity": "MongoDB University",
-      "desc": "<a target='_blank' href='https://courses.edx.org/certificates/d6d971234f2b4b95a63a7fb440d405c9'>Certificado</a> de superación del curso."
+    "Angular":{
+      "date": "09/2018",
+      "title": "Angular 6 avanzado, MEAN, JWT, Módulos y animaciones",
+      "entity": "Udemy",
+      "desc": "<a target='_blank' href='./certificados/certificadoANGULAR6.jpg'>Certificado</a> de superación del curso."
     },
     "eoicloud":{
       "date": "01/2016",
@@ -165,14 +158,14 @@
 
     "html52":{
       "date": "01/2016",
-      "title": "HTML5.1x Part 2: Advanced Techniques for Designing HTML5 Apps",
+      "title": "HTML 5.1x Part 2: Advanced Techniques for Designing HTML5 Apps",
       "entity": "W3C",
-      "desc": "Curso completo con <a target='_blank' href='https://courses.edx.org/certificates/9a7dde1b73db4475876208aeaac99f72'>certificado</a> de HTML5 impartido por la W3C y distribuido en EDX."
+      "desc": "Curso completo con <a target='_blank' href='https://courses.edx.org/certificates/64909559ecca4cf3bbc17f77ce54290d'>certificado</a> de HTML5 impartido por la W3C y distribuido en EDX."
     },
 
     "html51":{
       "date": "12/2015",
-      "title": "HTML5.1x Part 1: HTML5 Coding Essentials and Best Practices",
+      "title": "HTML 5.1x Part 1: HTML5 Coding Essentials and Best Practices",
       "entity": "W3C",
       "desc": "Curso completo con <a target='_blank' href='https://courses.edx.org/certificates/c2dff26fc005475fb7e5ee716cbdeaca'>certificado</a> de HTML5 impartido por la W3C y distribuido en EDX."
     },
@@ -223,7 +216,7 @@
       "date": "04/2015",
       "title": "MongoDB Certified",
       "entity": "MongoDB",
-      "desc": "Official MongoDB developer certification: <a href='https://university.mongodb.com/exams/display_certificate?csrfmiddlewaretoken=0VPqGcNRdvDvLiTnTSk3fV24YujyOrZu&license1=872&license2=056&license3=600'>Certificado</a>"
+      "desc": "Official MongoDB developer certification: <a href='https://university.mongodb.com/certification/display_certificate?license1=872&license2=056&license3=600'>Certificado</a>"
     },
 
     "mongodbacourse":{
