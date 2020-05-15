@@ -16,11 +16,8 @@
      </div>
 </div>
 
-
-
-
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/alertify.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
 <script>
 function ocultar(){
@@ -43,8 +40,6 @@ $(document).ready(function(){
   }
 
   $( ".flag").click(function() {
-    console.log(this);
-    console.log(this.id);
     setCookie("idioma",this.id, 25);
     traduccion();
   });
@@ -62,12 +57,12 @@ function fillData(element, object){
 }
 
 function traduccion(){
-  //i18n.init({ lng: 'en-US' } , function(t) {
+
     i18n.init({ lng: getCookie("idioma")},function(t) {
       // translate complete body
       $("body").i18n();
-      var works,titles,courses,books;
-      var elements=["works","titles","courses","books"];
+      let works,titles,courses,books;
+      const elements=["works","titles","courses","books"];
 
       works = t("works", { returnObjectTrees: true });
       titles = t("titles", { returnObjectTrees: true });
@@ -204,15 +199,7 @@ ga('send', 'pageview');
             <a href="http://www.zabalburu.hezkuntza.net/" target="_blank">
             	<img src="./imagenes/zabalburu.jpg" alt="colegio zabalburu" />
             </a>
-            <!--
-            <a href="http://www.pixelpro.es/" target="_blank">
-            	<img src="./imagenes/pixelpro.png" alt="pixelpro" />
-            </a>
-            <a href="http://www.ieeformacion.es/" target="_blank">
-            	<img src="./imagenes/IEE.jpg" alt="IEE" />
-        	  </a>
-            -->
-            <span align="absmiddle">Joseba Madrigal Marinas © 2014.</span>
+            <span align="absmiddle">Joseba Madrigal Marinas © 2020.</span>
              <div class="clear"></div>
         </div>
     </div>

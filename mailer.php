@@ -54,8 +54,8 @@ if($_POST)
     you should un-comment the first line below, and remove the second header line. 
     Of-course you need to enter your own email address here, which exists in your cp.
     */
-    //$headers = 'From: your-name@YOUR-DOMAIN.COM' . "\r\n" .
-    $headers = 'From: '.$user_Email.'' . "\r\n" . //remove this line if line above this is un-commented
+    $headers = 'From: info@josebamadrigal.com' . "\r\n" .
+    //$headers = 'From: '.$user_Email.'' . "\r\n" . //remove this line if line above this is un-commented
     'Reply-To: '.$user_Email.'' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
     

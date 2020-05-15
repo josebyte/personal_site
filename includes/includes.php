@@ -8,16 +8,16 @@
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
 
 
     <!-- alertify -->
-	<link rel="stylesheet" href="./css/alertify.core.css" />
-	<link rel="stylesheet" href="./css/alertify.default.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
 
-  <script type="text/javascript" src="./js/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/i18next-1.8.0.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/i18next-1.8.0.min.js"></script>
 
   </head>
   <body id="top">

@@ -35,17 +35,28 @@
     "phonegap": "Curso formativo en PixelPro y proyecto fin de carrera realizados con este framework (2ª Mejor nota de la promoción.",
     "drools": "Conocimientos básicos en el framework Drools (Inteligencia artificial y sistemas basados en reglas para JAVA).",
     "linux": "Linux (Gestión de usuarios, Bind9, iptables, Raid, ssh, scripting), conocimientos y experiencia en consola.",
-    "3d": "Conocimientos básicos en modelado, animación y Unity3D.",
-    "mejor1": "Mejor nota de la carrera de mi promoción en: POO, Bases de datos, Programación Cliente-Servidor J2EE y Sistemas Operativos.",
-    "mejor2": "Segunda mejor nota de la carrera de mi promoción en: Proyecto fin de carrera, tecnología de los computadores y gestión de proyectos.",
-    "conducir": "Permiso de conducción B.",
+
     "ingles": "Ingles",
     "inglesdesc": "Ingles técnico correspondiente a la ingeniería.",
     "euskera": "Euskera",
-    "euskeradesc": "Nivel medio-alto debido a haber cursado educación primaria y secundaria en modelo B (bilingüe)."
-
+    "euskeradesc": "Nivel medio-alto debido a haber cursado educación primaria y secundaria en modelo B (bilingüe). Certificado B2 de la escuela oficial de idiomas."
   },
 
+  "titles":{
+
+    "wales":{
+      "date": "2011-2014",
+      "title": "BACHELOR OF SCIENCE HONOURS IN COMPUTING",
+      "entity": "Universidad de Gales",
+      "desc": "Issued by the European University of Wales (faithful to the new Bologna plan)."
+    },
+
+    "zabalburu":{
+      "date": "2005-2007",
+      "title": "Tecnico superior en desarrollo de aplicaciones informáticas",
+      "entity": "Colegio Zabalburu"
+    }
+  },
 
   "methodologies" :{
     "poo":{
@@ -72,11 +83,26 @@
 
 
   "works" :{
+
+    "irontec":{
+      "date" : "03/2019",
+      "title": "Senior developer",
+      "entity": "Irontec",
+      "desc" : "Desarrollo en Angular 9 con NGRX de webs y apps para clientes."
+    },
+
+    "wlingua":{
+      "date" : "06/2015 - 03/2019",
+      "title": "Fullstack developer",
+      "entity": "Wlingua",
+      "desc" : "Desarrollo en PHP y Javascript tanto del gestor como de las apps. Frontend en DojoJS y Backend en PHP con Zend y Doctrine."
+    },
+
     "near":{
-      "date" : "09/2014",
+      "date" : "08/2014 - 06/2015",
       "title": "Web Developer and I+D research",
       "entity": "Near technologies",
-      "desc" : "Desarrollo en el framework Atoms. Shadow DOM, Web components, NodeJS, MongoDB, Magento..."
+      "desc" : "Investigación y desarrollo en el framework Atoms. Shadow DOM, Web components, NodeJS, MongoDB, Magento..."
     },
 
     "forodigital":{
@@ -112,22 +138,6 @@
       "entity": "Instituto Eskurtze"
     }
 
-  }
-  ,
-  "titles":{
-
-    "wales":{
-      "date": "2011-2014",
-      "title": "BACHELOR OF SCIENCE HONOURS IN COMPUTING",
-      "entity": "Universidad de Gales",
-      "desc": "Issued by the European University of Wales (faithful to the new Bologna plan)."
-    },
-
-    "zabalburu":{
-      "date": "2005-2007",
-      "title": "Tecnico superior en desarrollo de aplicaciones informáticas",
-      "entity": "Colegio Zabalburu"
-    }
   },
 
   "courses":{
@@ -298,5 +308,14 @@
       "entity": "",
       "desc": ""
     }
+  },
+
+  "others":{
+    "3d": "Conocimientos básicos en modelado, animación y Unity3D.",
+    "mejor1": "Mejor nota de la carrera de mi promoción en: POO, Bases de datos, Programación Cliente-Servidor J2EE y Sistemas Operativos.",
+    "mejor2": "Segunda mejor nota de la carrera de mi promoción en: Proyecto fin de carrera, tecnología de los computadores y gestión de proyectos.",
+    "prl": "Curso en prevención de riesgos laborales capacitante para el desarrollo de funciones de nivel básico (30h).",
+    "prl_link": "<a target='_blank' href='./certificados/PRL.pdf'>Certificación</a>.",
+    "conducir": "Permiso de conducir (B)."
   }
 }
