@@ -35,16 +35,28 @@
     "phonegap": "Course in PixelPro and carrer final project done with this framework (Second best mark of my promotion).",
     "drools": "Basic knowledge in Drools framework (Artificial intelligence and systems based on rules for JAVA).",
     "linux": "Linux (Users managemente, Bind9, iptables, Raid, ssh, scripting), knowledge and experience in console.",
-    "3d": "Basic knowledge in modeling, animation and Unity3D.",
-    "mejor1": "Best mark in the university for: OOP, Data bases, Client-Server development with J2EE and operative sistems.",
-    "mejor2": "Second best mark for: final project, computer technologies and project management.",
-    "conducir": "Spanish driving license.",
+
     "ingles": "English",
     "inglesdesc": "Technical english corresponding to the engineering.",
     "euskera": "Basque",
     "euskeradesc": "Medium-hight level due to have completed primary and secondary education in Model B (bilingual)."
   },
 
+  "titles":{
+
+    "wales":{
+      "date": "2011-2014",
+      "title": "BACHELOR OF SCIENCE HONOURS IN COMPUTING",
+      "entity": "Wales university",
+      "desc": "Issued by the European University of Wales (Faithful compliance to Bologna process)."
+    },
+
+    "zabalburu":{
+      "date": "2005-2007",
+      "title": "Higher technician in applications development",
+      "entity": "Zabalburu school"
+    }
+  },
 
   "methodologies" :{
     "poo":{
@@ -71,10 +83,25 @@
 
 
   "works" :{
+
+    "irontec":{
+      "date" : "03/2019",
+      "title": "Senior developer",
+      "entity": "Irontec",
+      "desc" : "Development of web/apps with Angular 9 using NGRX."
+    },
+
+    "wlingua":{
+      "date" : "06/2015 - 03/2019",
+      "title": "Fullstack developer",
+      "entity": "Wlingua",
+      "desc" : "Development with PHP and Javascript of the administrator and the app. Frontend in DojoJS and Backend with PHP in Zend and Doctrine."
+    },
+
     "near":{
       "date" : "09/2014",
       "title": "Web Developer and I+D research",
-      "entity": "Near technologies",
+      "entity": "Dominion",
       "desc" : "Development with Atoms framework. Shadow DOM, Web components, NodeJS, MongoDB, Magento..."
     },
 
@@ -113,35 +140,31 @@
 
   }
   ,
-  "titles":{
-
-
-    "uned":{
-      "date": "",
-      "title": "MA DEGREE IN SOFTWARE ENGINEERING RESEARCH  & INFORMATION SYSTEMS",
-      "entity": "UNED"
-    },
-
-    "wales":{
-      "date": "2011-2014",
-      "title": "BACHELOR OF SCIENCE HONOURS IN COMPUTING",
-      "entity": "Wales university",
-      "desc": "Issued by the European University of Wales (Faithful compliance to Bologna process)."
-    },
-
-    "zabalburu":{
-      "date": "2005-2007",
-      "title": "Higher technician in applications development",
-      "entity": "Zabalburu school"
-    }
-  },
 
   "courses":{
-    "analytics":{
+    "Angular":{
+      "date": "09/2018",
+      "title": "Angular 6 advanced course: MEAN, JWT, modules and animations",
+      "entity": "Udemy",
+      "desc": "<a target='_blank' href='./certificados/certificadoANGULAR6.jpg'>certificate</a>."
+    },
+    "eoicloud":{
       "date": "01/2016",
-      "title": "Curso de Analítica Web",
+      "title": "Cloud Computing course",
       "entity": "Escuela de organización industrial (EOI)",
-      "desc": "<a target='_blank' href='./certificados/Activate 04 Analitica Web-2016-01-26.pdf'>Certificado</a> de superación del curso de analítica web de 40 horas de duración."
+      "desc": "Cloud Computing <a target='_blank' href='./certificados/Activate 03 Cloud Computing.pdf'>certificate</a> of 40 hours."
+    },
+    "eoimarketing":{
+      "date": "01/2016",
+      "title": "Curso de Marketing digital",
+      "entity": "Escuela de organización industrial (EOI)",
+      "desc": "<a target='_blank' href='./certificados/Activate 02 Curso Marqueting digital.pdf'>certificate</a> of 40 hours."
+    },
+    "eoianalytics":{
+      "date": "01/2016",
+      "title": "Web analytic course",
+      "entity": "Escuela de organización industrial (EOI)",
+      "desc": "<a target='_blank' href='./certificados/Activate 04 Analitica Web-2016-01-26.pdf'>certificate</a> of 40 hours."
     },
     "html52":{
       "date": "01/2016",
@@ -277,5 +300,22 @@
       "desc": "3 months training."
     }
 
+  },
+
+  "books":{
+    "mongodb":{
+      "date": "2016",
+      "title": "<a href='https://leanpub.com/mongodbcastellano' target='_blank'>MongoDB en castellano</a>",
+      "entity": "",
+      "desc": ""
+    }
+  },
+
+  "others":{
+    "3d": "Basic knowledge in modeling, animation and Unity3D.",
+    "mejor1": "Best mark in the university for: OOP, Data bases, Client-Server development with J2EE and operative sistems.",
+    "mejor2": "Second best mark for: final project, computer technologies and project management.",
+    "prl": "Basic occupational risk prevention course (30h).",
+    "conducir": "Spanish driving license."
   }
 }
