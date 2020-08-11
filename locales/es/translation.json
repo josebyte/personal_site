@@ -48,7 +48,9 @@
       "date": "2011-2014",
       "title": "BACHELOR OF SCIENCE HONOURS IN COMPUTING",
       "entity": "Universidad de Gales",
-      "desc": "Issued by the European University of Wales (faithful to the new Bologna plan)."
+      "desc": "Convalidado por el Gobierno de España a nivel de ingeniería superior en la rama de las tecnologías de información y comunicación (TIC).
+Mejor nota de mi promoción en: POO, Bases de datos avanzadas, Programación ClienteServidor y Sistemas Operativos.
+Segunda mejor nota de mi promoción en: Proyecto fin de carrera, tecnología de los computadores y gestión de proyectos."
     },
 
     "zabalburu":{
@@ -141,6 +143,12 @@
   },
 
   "courses":{
+    "sixsigma":{
+      "date": "05/2020",
+      "title": "Especialización six sigma green belt que consta de 4 cursos.",
+      "entity": "Coursera",
+      "desc": "<a target='_blank' href='./certificados/sixsigma.jpg'>Certificado</a> de superación del curso."
+    },
     "Angular":{
       "date": "09/2018",
       "title": "Angular 6 avanzado, MEAN, JWT, Módulos y animaciones",
