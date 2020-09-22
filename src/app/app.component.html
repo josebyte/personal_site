@@ -1,0 +1,21 @@
+<header>
+
+  Joseba Madrigal
+  <menu>
+    <ul>
+      <li routerLink="/cv" routerLinkActive="active">{{ 'nav.cv' | translate }}</li>
+      <li routerLink="/briefcase" routerLinkActive="active">{{ 'nav.briefcase' | translate }}</li>
+      <li routerLink="/recommendation-letters" routerLinkActive="active">{{ 'nav.recommendation-letters' | translate }}</li>
+      <li>{{ 'nav.contact' | translate }}</li>
+      <li>{{ 'nav.print' | translate }}</li>
+
+      <ul class="right">
+        <li class="flag" (click)="switchLang('en')"><img src="assets/images/flags/en.png"></li>
+        <li class="flag" (click)="switchLang('es')"><img src="assets/images/flags/es.png"></li>
+        <li class="flag" (click)="switchLang('eus')"><img src="assets/images/flags/eus.png"></li>
+      </ul>
+    </ul>
+  </menu>
+</header>
+
+<router-outlet></router-outlet>
