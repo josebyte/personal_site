@@ -5,13 +5,15 @@ import { CvRoutingModule } from './cv-routing.module';
 
 import { CvContainerComponent } from './containers/cv-container/cv-container.component';
 import { CvElementComponent } from './components/cv-element/cv-element.component';
+import {TranslateModule} from '@ngx-translate/core';
 
 
 @NgModule({
   declarations: [CvContainerComponent, CvElementComponent],
-  imports: [
-    CommonModule,
-    CvRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        CvRoutingModule,
+        TranslateModule
+    ]
 })
 export class CvModule { }

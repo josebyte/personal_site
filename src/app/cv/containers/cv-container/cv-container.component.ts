@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import * as EuropassParser from 'europass-parser';
+
+import CVJoseba from '../../../../assets/jsonCV/josebaES.json';
 
 @Component({
   selector: 'app-cv-container',
@@ -7,19 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvContainerComponent implements OnInit {
 
-  blocks = [
-    'acedemic',
-    'complementary',
-    'books',
-    'jobs',
-    'knowledge',
-    'others',
-    'langs'
-  ];
+  cv;
 
-  constructor() { }
+  constructor(
+  ) {
+    this.cv = CVJoseba;
+  }
 
   ngOnInit() {
+/*
+    EuropassParser('assets/pdf-cv/esnew.pdf');
+    console.log(EuropassParser('assets/pdf-cv/esnew.pdf'));
+*/
   }
 
 }
