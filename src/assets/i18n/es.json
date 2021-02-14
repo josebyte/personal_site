@@ -16,23 +16,31 @@
   "workExperiences": "Experiencia laboral",
   "languageSkills": "Idiomas",
 
-
-
-
-
-
-
-
-
-
+  "LANG": {
+    "listening": "Comprensión auditiva",
+    "reading": "Comprensión lectora",
+    "writing": "Expresión escrita",
+    "spokenInteraction": "Oral",
+    "baq": "Euskera",
+    "ingles": "Inglés"
+  },
 
   "nav":{
     "cv": "CV",
     "briefcase": "Portafolio",
-    "recommendation-letters": "Cartas de recomendación",
+    "recommendation-letters": "Recomendaciones",
     "print": "Imprimir",
     "contact": "Contactar"
   },
+
+
+
+
+
+
+
+
+
   "cv": {
     "blocks": {
       "acedemic": "Formación académica",

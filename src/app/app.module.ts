@@ -9,6 +9,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 // Components:
 import { AppComponent } from './app.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import {SharedModule} from './shared/shared.module';
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -16,7 +18,8 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
         deps: [HttpClient]
       },
       defaultLanguage: 'es'
-    })
+    }),
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,39 +1,13 @@
 
-<h1>CV</h1>
-
-
 <div id="cv" class="instaFade">
-  <div class="mainDetails">
 
-    <div id="headshot" class="quickFade">
-      <img [src]="cv.userPicture"
-           [alt]="cv.profile.personalInformation.firstName + ' ' + cv.profile.personalInformation.lastName"
-           [title]="cv.profile.personalInformation.firstName + ' ' + cv.profile.personalInformation.lastName">
-    </div>
+  <!-- header aqui-->
 
-    <div id="name">
-      <h1 class="quickFade delayTwo">{{cv.profile.personalInformation.firstName + ' ' + cv.profile.personalInformation.lastName}}</h1>
-      <h2 class="quickFade delayThree">{{'title' | translate}}</h2>
-    </div>
-
-    <div id="contactDetails" class="quickFade delayFour">
-      <ul>
-
-        <li><span class="glyphicon glyphicon-user"></span> {{ cv.profile.personalInformation.dateOfBirth.date }}</li>
-        <li><span class="glyphicon glyphicon-envelope"></span> {{ cv.profile.personalInformation.emails[0] }}</li>
-        <li><!--<span class="glyphicon glyphicon-earphone"></span> --><img src="./imagenes/imgmovil.png" alt="movil"></li>
-        <li><span class="glyphicon glyphicon-map-marker"></span>
-          {{
-          cv.profile.personalInformation.addresses[0].city
-          }}
-
-          Bizkaia (Spain)</li>
-
-      </ul>
-    </div>
-    <div class="clear"></div>
-  </div>
   <div id="mainArea" class="quickFade delayFive">
+
+    <app-header
+      [personalInformation]="cv.profile.personalInformation"
+    ></app-header>
 
     <section>
       <div class="sectionTitle">
@@ -41,7 +15,7 @@
       </div>
       <div class="sectionContent" id="titles">
         <article *ngFor="let education of cv.profile.educationTrainings">
-          <span class="periodo">{{education.startDate.date}} - {{education.endDate.date}}</span>
+          <span class="periodo">{{education.startDate.date | date: 'yyyy'}} - {{education.endDate.date | date: 'yyyy'}}</span>
           <h2>{{ education.qualification }}</h2>
           <p class="subDetails">{{ education.organisationName }}</p>
           <p [innerHTML]="education.description"></p>
@@ -77,7 +51,7 @@
       </div>
       <div class="sectionContent" id="works">
         <article *ngFor="let exp of cv.profile.workExperiences">
-          <span class="periodo">{{exp.startDate.date}}</span>
+          <span class="periodo">{{exp.startDate.date | date: 'MM/yyyy'}} {{exp.endDate?.date | date: '- MM/yyyy'}}</span>
           <h2>{{ exp.occupation.label }}</h2>
           <p class="subDetails">{{ exp.employer }}</p>
           <p [innerHTML]="exp.mainActivities"></p>
@@ -247,14 +221,16 @@
       <div class="sectionTitle">
         <h1>{{ 'languageSkills' | translate }}</h1>
       </div>
-      <div class="sectionContent">
-        <article *ngFor="let lang of cv.profile.languageSkills.otherLanguages">
-          <h2>{{ lang.language }}</h2>
+      <div class="sectionContent row">
+        <article [class]="'col-'+12/cv.profile.languageSkills.otherLanguages.length" *ngFor="let lang of cv.profile.languageSkills.otherLanguages">
+          <h2>{{ 'LANG.' + lang.language | translate }}</h2>
           <div>{{ 'LANG.listening' | translate }}: {{ lang.listening }}</div>
           <div>{{ 'LANG.reading' | translate }}: {{ lang.reading }}</div>
           <div>{{ 'LANG.writing' | translate }}: {{ lang.writing }}</div>
           <div>{{ 'LANG.spokenInteraction' | translate }}: {{ lang.spokenInteraction }}</div>
+          <!--
           <div>{{ 'LANG.spokenProduction' | translate }}: {{ lang.spokenProduction }}</div>
+          -->
         </article>
       </div>
       <div class="clear"></div>

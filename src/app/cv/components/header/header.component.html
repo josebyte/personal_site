@@ -1,0 +1,33 @@
+<div class="mainDetails row">
+
+  <div id="name" class="col-6">
+    <h1 class="quickFade delayTwo">{{personalInformation.firstName + ' ' + personalInformation.lastName}}</h1>
+    <h2 class="quickFade delayThree">{{'title' | translate}}</h2>
+  </div>
+
+  <div id="contactDetails" class="quickFade delayFour col-3">
+    <ul>
+
+      <li>
+        <i-feather name="user"></i-feather>
+        {{ personalInformation.dateOfBirth.date }}
+      </li>
+      <li>
+        <i-feather name="at-sign"></i-feather>
+        {{ personalInformation.emails[0] }}
+      </li>
+      <li><img src="assets/images/imgmovil.png" alt="movil"></li>
+      <li>
+        <i-feather name="map-pin"></i-feather>
+        {{personalInformation.addresses[0].city }}
+        Bizkaia (España)
+      </li>
+      <li>
+        <i-feather name="github"></i-feather>
+        <a href="https://github.com/josebyte">https://github.com/josebyte</a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>

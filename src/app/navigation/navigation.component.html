@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+
+    <div [style.background-image]="'url(' + cv.userPicture + ')'"
+         class="rounded-circle photo">
+    </div>
+
+    <a href="#">
+      {{ cv.profile.personalInformation.firstName }}
+      {{' ' + cv.profile.personalInformation.lastName }}
+    </a>
+
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item" routerLink="/cv" routerLinkActive="active">
+          <i-feather name="camera"></i-feather>
+          <div class="nav-link">{{ 'nav.cv' | translate }}</div>
+        </li>
+        <li class="nav-item" routerLink="/briefcase" routerLinkActive="active">
+          <i-feather name="briefcase"></i-feather>
+          <div class="nav-link">{{ 'nav.briefcase' | translate }}</div>
+        </li>
+        <li class="nav-item" routerLink="/recommendation-letters" routerLinkActive="active">
+          <i-feather name="thumbs-up"></i-feather>
+          <div class="nav-link">{{ 'nav.recommendation-letters' | translate }}</div>
+        </li>
+        <li class="nav-item">
+          <i-feather name="mail"></i-feather>
+          <div class="nav-link">{{ 'nav.contact' | translate }}</div>
+        </li>
+        <li class="nav-item">
+          <i-feather name="printer"></i-feather>
+          <div class="nav-link">{{ 'nav.print' | translate }}</div>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right right">
+        <li class="flag" (click)="switchLang('en')"><img src="assets/images/flags/en.png"></li>
+        <li class="flag" (click)="switchLang('es')"><img src="assets/images/flags/es.png"></li>
+        <li class="flag" (click)="switchLang('eus')"><img src="assets/images/flags/eus.png"></li>
+      </ul>
+    </div>
+
+
+
+  </div>
+
+</nav>
+
