@@ -1,7 +1,10 @@
 [
   {
-    "name": "MongoDB en castellano",
-    "year": 2016,
-    "url": "https://leanpub.com/mongodbcastellano"
+    "title": "Director del Centro San Luis",
+    "image": "sanluis-es.jpg"
+  },
+  {
+    "title": "Director de ForoDigitale",
+    "image": "forodigital-es.jpg"
   }
 ]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Briefcase from '../../../../assets/jsonCV/briefcaseJosebaES.json';
 
 @Component({
   selector: 'app-briefcase',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BriefcaseComponent implements OnInit {
 
-  projects = ['forodigitale', 'lifezona', 'sailingzona', 'fitnesszona', 'outletzona', 'bikezona', 'bikezona.tv', 'canalciclismo', 'canalchic'];
+  briefcase;
 
-  constructor() { }
+  constructor() {
+    this.briefcase = Briefcase;
+  }
 
   ngOnInit(): void {
   }

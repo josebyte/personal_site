@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import RecommendationLettersES from '../../../../assets/jsonCV/recommendationLettersJosebaES.json';
+import RecommendationLettersEN from '../../../../assets/jsonCV/recommendationLettersJosebaEN.json';
+import {TranslateService} from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-recommendation-letters',
@@ -7,9 +11,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecommendationLettersComponent implements OnInit {
 
-  letters = ['sanluis', 'forodigital'];
+  letters;
 
-  constructor() { }
+  constructor(private translate: TranslateService) {
+    this.letters = this.translate.currentLang === 'EN' ? RecommendationLettersEN : RecommendationLettersES;
+  }
 
   ngOnInit(): void {
   }

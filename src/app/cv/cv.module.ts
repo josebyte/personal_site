@@ -6,12 +6,12 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../shared/shared.module';
 
 import { CvContainerComponent } from './containers/cv-container/cv-container.component';
-import { CvElementComponent } from './components/cv-element/cv-element.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SectionComponent } from './components/section/section.component';
 
 
 @NgModule({
-  declarations: [CvContainerComponent, CvElementComponent, HeaderComponent],
+  declarations: [CvContainerComponent, HeaderComponent, SectionComponent],
     imports: [
       CommonModule,
       CvRoutingModule,

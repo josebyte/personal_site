@@ -1,227 +1,33 @@
 
-<div id="cv" class="instaFade">
+<div id="cv">
 
-  <!-- header aqui-->
-
-  <div id="mainArea" class="quickFade delayFive">
+  <div class="container my-4 shadow">
 
     <app-header
+      [photo]="cv.userPicture"
       [personalInformation]="cv.profile.personalInformation"
     ></app-header>
 
-    <section>
-      <div class="sectionTitle">
-        <h1>{{'educationTrainings' | translate}}</h1>
-      </div>
-      <div class="sectionContent" id="titles">
-        <article *ngFor="let education of cv.profile.educationTrainings">
-          <span class="periodo">{{education.startDate.date | date: 'yyyy'}} - {{education.endDate.date | date: 'yyyy'}}</span>
-          <h2>{{ education.qualification }}</h2>
-          <p class="subDetails">{{ education.organisationName }}</p>
-          <p [innerHTML]="education.description"></p>
-        </article>
-        <div class="clear"></div>
-      </div>
-    </section>
+    <app-section *ngFor="let section of sections" class="row px-4"
+                 [section]="section">
+    </app-section>
 
-    Falta:
-    <!-- todo:
-    <section>
-      <div class="sectionTitle">
-        <h1 data-i18n="home.complementarytraining">Formación complementaria</h1>
+    <section class="row px-4" *ngFor="let customSection of cv.profile.customSections">
+      <div class="sectionTitle col-md-3">
+        <h1>{{ customSection.title }}</h1>
       </div>
-      <div class="sectionContent" id="courses"><article><span class="periodo">05/2020</span><h2>Especialización six sigma green belt que consta de 4 cursos.</h2><p class="subDetails">Coursera</p></article><p><a target="_blank" href="./certificados/sixsigma.jpg">Certificado</a> de superación del curso.</p><article><span class="periodo">09/2018</span><h2>Angular 6 avanzado, MEAN, JWT, Módulos y animaciones</h2><p class="subDetails">Udemy</p></article><p><a target="_blank" href="./certificados/certificadoANGULAR6.jpg">Certificado</a> de superación del curso.</p><article><span class="periodo">01/2016</span><h2>Curso de Cloud Computing</h2><p class="subDetails">Escuela de organización industrial (EOI)</p></article><p><a target="_blank" href="./certificados/Activate 03 Cloud Computing.pdf">Certificado</a> de superación del curso de Cloud Computing de 40 horas de duración.</p><article><span class="periodo">01/2016</span><h2>Curso de Marketing digital</h2><p class="subDetails">Escuela de organización industrial (EOI)</p></article><p><a target="_blank" href="./certificados/Activate 02 Curso Marqueting digital.pdf">Certificado</a> de superación del curso de Marqueting digital de 40 horas de duración.</p><article><span class="periodo">01/2016</span><h2>Curso de Analítica Web</h2><p class="subDetails">Escuela de organización industrial (EOI)</p></article><p><a target="_blank" href="./certificados/Activate 04 Analitica Web-2016-01-26.pdf">Certificado</a> de superación del curso de analítica web de 40 horas de duración.</p><article><span class="periodo">01/2016</span><h2>HTML 5.1x Part 2: Advanced Techniques for Designing HTML5 Apps</h2><p class="subDetails">W3C</p></article><p>Curso completo con <a target="_blank" href="https://courses.edx.org/certificates/64909559ecca4cf3bbc17f77ce54290d">certificado</a> de HTML5 impartido por la W3C y distribuido en EDX.</p><article><span class="periodo">12/2015</span><h2>HTML 5.1x Part 1: HTML5 Coding Essentials and Best Practices</h2><p class="subDetails">W3C</p></article><p>Curso completo con <a target="_blank" href="https://courses.edx.org/certificates/c2dff26fc005475fb7e5ee716cbdeaca">certificado</a> de HTML5 impartido por la W3C y distribuido en EDX.</p><article><span class="periodo">10/2015</span><h2>Programación de Apps Móviles</h2><p class="subDetails">Universidad Complutense Madrid</p></article><p><a target="_blank" href="./certificados/Activate 01 AppsMoviles.pdf">Certificado</a> de superación del curso de desarrollo de Apps Móviles de 40 horas de duración.</p><article><span class="periodo">07/2015</span><h2>HTML5.1x: Fundamentos de diseño web</h2><p class="subDetails">W3C</p></article><p>Curso completo con <a target="_blank" href="./certificados/HTML5Certificate.pdf">certificado verificado</a> de HTML5 impartido por la W3C y distribuido en EDX.</p><article><span class="periodo">07/2015</span><h2>Google tag manager</h2><p class="subDetails">Google</p></article><p>Curso oficial Google tag manager <a target="_blank" href="./certificados/googletag.png">Certificación</a>. </p><article><span class="periodo">06/2015</span><h2>NodeJS y ExpressJS</h2><p class="subDetails">Universidad Politecnica de Madrid.</p></article><p>NodeJS y ExpressJS </p><article><span class="periodo">06/2015</span><h2>Android avanzado</h2><p class="subDetails">Ipartek</p></article><p>60h</p><article><span class="periodo">06/2015</span><h2>Claves para Gestionar Personas</h2><p class="subDetails">IESE Business School (Navarra)</p></article><p><a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/VDRYSUH9RH">Certificado</a></p><article><span class="periodo">04/2015</span><h2>MongoDB Certified</h2><p class="subDetails">MongoDB</p></article><p>Official MongoDB developer certification: <a href="https://university.mongodb.com/certification/display_certificate?license1=872&amp;license2=056&amp;license3=600">Certificado</a></p><article><span class="periodo">03/2015</span><h2>MongoDB for Data base administrators</h2><p class="subDetails">MongoDB-University</p></article><p>Certificado de superación del curso con una calificación entre el 5% mejor - Formación oficial MongoDB DBA.<a href="./certificadosMOngoDBCertifiedDBA.pdf">Certificado</a></p><article><span class="periodo">02/2015</span><h2>MongoDB for Node.js Developers</h2><p class="subDetails">MongoDB-University</p></article><p>Certificado de superación del curso MongoDB-University obtenido unicamente por el 17% de los 5.152 inscritos - Formación oficial MongoDB University avanzada en la base de dato no relacional.<a href="./certificados/MongoDBCertificate.pdf">Certificado</a></p><article><span class="periodo">2015</span><h2>Desarrollo en HTML5, CSS y Javascript de WebApps, incl. móviles FirefoxOS</h2><p class="subDetails">Universidad Politecnica de Madrid.</p></article><p>Rango percentil de 94% - 50h de formación avanzada en programación y diseño de aplicaciones, utilizando HTML5, CSS y JavaScript.<a href="./certificados/firefoxapps.PDF">Certificado</a></p><article><span class="periodo">2014</span><h2>Phonegap</h2><p class="subDetails">Pixelpro</p></article><p>6 meses de formación en curso online.</p><article><span class="periodo">2013</span><h2>ANDROID NATIVO</h2><p class="subDetails">IEE - Instituto europeo para el empleo.</p></article><p>Sobresaliente - 300h de formación avanzada en programación nativa en Android.<a href="./certificados/androidnativo.PDF">Certificado</a></p><article><span class="periodo">2013</span><h2>HTML5 avanzado</h2><p class="subDetails">Pixelpro</p></article><p>3 meses de formación en curso online.</p><article><span class="periodo">2012</span><h2>METODOLOGIAS AGILES - SCRUM</h2><p class="subDetails">Pixelpro</p></article><p>3 meses de formación en curso online.</p><article><span class="periodo">2008</span><h2>METODOLOGIA DE LAS 5s-s</h2><p class="subDetails">Colegio Zabalburu</p></article><p>3 meses de formación en curso online.</p><article><span class="periodo">2007</span><h2>Oracle PL/SQL Forms y Reports</h2><p class="subDetails">Consultec</p></article><p>1 mes de formación en Steria Ibérica.</p><article><span class="periodo">2007</span><h2>SAP</h2><p class="subDetails">Cromion IT</p></article><p>3 meses de formación.</p></div>
-      <div class="clear"></div>
-    </section>
-    -->
-
-    <!--
-    <section>
-      <div class="sectionTitle">
-        <h1 data-i18n="home.books">Libros publicados</h1>
-      </div>
-      <div class="sectionContent" id="books"><article><span class="periodo">2016</span><h2><a href="https://leanpub.com/mongodbcastellano" target="_blank">MongoDB en castellano</a></h2><p class="subDetails"></p></article></div>
-      <div class="clear"></div>
-    </section>
-    -->
-
-    <section>
-      <div class="sectionTitle">
-        <h1>{{ 'workExperiences' | translate }}</h1>
-      </div>
-      <div class="sectionContent" id="works">
-        <article *ngFor="let exp of cv.profile.workExperiences">
-          <span class="periodo">{{exp.startDate.date | date: 'MM/yyyy'}} {{exp.endDate?.date | date: '- MM/yyyy'}}</span>
-          <h2>{{ exp.occupation.label }}</h2>
-          <p class="subDetails">{{ exp.employer }}</p>
-          <p [innerHTML]="exp.mainActivities"></p>
-          <div class="clear"></div>
+      <div class="sectionContent col-md-9">
+        <article *ngFor="let record of customSection.records">
+          <p class="subDesc mt-2" [innerHTML]="record.content"></p>
         </article>
       </div>
     </section>
 
-    falta:
-    <!--
-    <section>
-      <div class="sectionTitle">
-        <h1 data-i18n="home.knowledge">Conocimientos</h1>
-      </div>
-
-      <div class="sectionContent">
-
-        <article>
-          <h2 data-i18n="home.methodology">Metodologias</h2>
-          <p>
-          </p><ul>
-          <li>
-            <strong data-i18n="methodologies.poo.name">POO (Programación orientada a objetos)</strong>
-            <span data-i18n="methodologies.poo.desc">Mejor nota de la carrera.</span>
-          </li>
-          <li>
-            <strong data-i18n="methodologies.uml.name">Análisis UML</strong>
-            <span data-i18n="methodologies.uml.desc">Análisis de casos de uso, diagramas de clases, diagramas de interacción.</span>
-          </li>
-          <li>
-            <strong data-i18n="methodologies.scrum.name">SCRUM</strong> (Metodología de desarrollo
-            ágil).
-            <span data-i18n="methodologies.scrum.desc">Metodología de desarrollo ágil.</span>
-          </li>
-          <li>
-            <strong data-i18n="methodologies.mvc.name">MVC</strong>
-            <span data-i18n="methodologies.mvc.desc">Modelo Vista Controlador.</span>
-          </li>
-        </ul>
-          <p></p>
-        </article>
-
-
-        <article>
-          <h2 data-i18n="home.relationaldb">Relational databases</h2>
-          <p data-i18n="home.relationaldbdesc">Mejor nota de la carrera en la asignatura, además de amplia experiencia en diseño de diagramas entidad-relación y programación PL-SQL.</p>
-          <p>
-          </p><ul>
-          <li><strong>Oracle 11g</strong> <span data-i18n="home.oracle">PL-SQL, FORMS Y REPORTS: 2 Años de experiencia en Steria Ibérica.</span>
-          </li>
-          <li><strong>MYSQL</strong></li>
-          <li><strong>MariaDB</strong></li>
-          <li><strong>SQLite</strong></li>
-        </ul>
-          <p></p>
-
-        </article>
-
-        <article>
-          <h2 data-i18n="home.server-side">Lenguajes Servidor</h2>
-          <p>
-          </p><ul>
-          <li>
-            <strong>J2EE</strong>
-            <span data-i18n="home.j2ee">Experiencia laboral de año y medio y mejor nota de la carrera</span>
-          </li>
-          <li>
-            <strong>PHP</strong>
-            <span data-i18n="home.php">Gran cantidad de desarrollos en el portafolio.</span>
-          </li>
-          <li>
-            <strong>ASP</strong>
-            <span data-i18n="home.asp">Desarrollos en el portafolio.</span>
-          </li>
-        </ul>
-          <p></p>
-
-        </article>
-
-        <article>
-          <h2 data-i18n="home.client-side">Lenguajes Cliente</h2>
-          <ul>
-            <li>
-              <strong>HTML 5 / CSS3</strong>
-              <span data-i18n="home.htmlcss">Dominio absoluto de ambas tecnologías, visible en el portafolio.</span>
-            </li>
-            <li>
-              <strong>Javascript</strong>
-              <span data-i18n="home.js">Conocimientos avanzados y experiencia laboral, especialmente con las librerías JQuery, JQueryMobile, i18n, alertify, NodeJs, ExpressJS, Socket.io y Angular.</span>
-            </li>
-            <li>
-              <strong>Android Nativo</strong>
-              <span data-i18n="home.android">Formación específica en (IEE instituto europeo de educación.</span>
-            </li>
-          </ul>
-          <p data-i18n="home.otroslenguajescliente">Conocimientos de C#, Visual Basic.NET y SAP.</p>
-        </article>
-
-        <article>
-          <h2 data-i18n="home.frameworks">Frameworks y CMS</h2>
-          <p>
-
-          </p><ul>
-          <li>
-            <strong>PhoneGap</strong>
-            <span data-i18n="home.phonegap">Curso formativo en PixelPro y proyecto fin de carrera realizados con este framework (2ª Mejor nota de la promoción.</span>
-          </li>
-          <li><strong>Hibernate</strong></li>
-          <li><strong>Spring</strong></li>
-          <li><strong>LifeRay</strong></li>
-          <li><strong>Joomla</strong></li>
-          <li><strong>Wordpress</strong></li>
-          <li><strong>Prestashop</strong></li>
-          <li><strong>VirtueMart</strong></li>
-        </ul>
-          <p></p>
-          <p data-i18n="home.drools">Conocimientos básicos en el framework Drools (Inteligencia artificial y sistemas basados en reglas para JAVA).</p>
-        </article>
-
-
-        <article>
-          <h2 data-i18n="home.servers">Servers</h2>
-          <ul>
-            <li><strong>Apache</strong></li>
-            <li><strong>Tomcat</strong></li>
-            <li><strong>WebLogic</strong></li>
-            <li><strong>IIS</strong></li>
-          </ul>
-          <p></p>
-        </article>
-
-        <article>
-          <h2 data-i18n="home.os">Operative Systems</h2>
-          <ul>
-            <li><strong>Linux (Gestión de usuarios, Bind9, iptables, Raid, ssh, scripting), conocimientos y
-              experiencia en consola.</strong></li>
-            <li><strong>MS-DOS/Windows 3.11-8</strong></li>
-          </ul>
-          <p></p>
-        </article>
-
-
-      </div>
-      <div class="clear"></div>
-    </section>
-
-    <section>
-      <div class="sectionTitle">
-        <h1 data-i18n="home.more">Otros datos</h1>
-      </div>
-      <div class="sectionContent">
-
-        <article>
-          <p data-i18n="others.mejor1">Mejor nota de la carrera de mi promoción en: POO, Bases de datos, Programación Cliente-Servidor J2EE y Sistemas Operativos.</p>
-          <p data-i18n="others.mejor2">Segunda mejor nota de la carrera de mi promoción en: Proyecto fin de carrera, tecnología de los computadores y gestión de proyectos.</p>
-          <p data-i18n="others.3d">Conocimientos básicos en modelado, animación y Unity3D.</p>
-          <p data-i18n="others.prl">Curso en prevención de riesgos laborales capacitante para el desarrollo de funciones de nivel básico (30h).</p>
-          <p data-i18n="others.conducir">Permiso de conducir (B).</p>
-        </article>
-
-      </div>
-      <div class="clear"></div>
-    </section>
--->
-
-    <section>
-      <div class="sectionTitle">
+    <section class="row px-4 pb-5">
+      <div class="sectionTitle col-md-3">
         <h1>{{ 'languageSkills' | translate }}</h1>
       </div>
-      <div class="sectionContent row">
+      <div class="sectionContent col-md-9 row">
         <article [class]="'col-'+12/cv.profile.languageSkills.otherLanguages.length" *ngFor="let lang of cv.profile.languageSkills.otherLanguages">
           <h2>{{ 'LANG.' + lang.language | translate }}</h2>
           <div>{{ 'LANG.listening' | translate }}: {{ lang.listening }}</div>
@@ -233,9 +39,14 @@
           -->
         </article>
       </div>
-      <div class="clear"></div>
     </section>
 
 
   </div>
+
+</div>
+
+<div class="btn btn-primary no-print" (click)="print()">
+  <i-feather name="printer"></i-feather>
+  <div class="nav-link">{{ 'nav.print' | translate }}</div>
 </div>

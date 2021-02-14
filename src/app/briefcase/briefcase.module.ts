@@ -2,16 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BriefcaseRoutingModule } from './briefcase-routing.module';
-import { BriefcaseItemComponent } from './components/briefcase-item/briefcase-item.component';
 import { BriefcaseComponent } from './containers/briefcase/briefcase.component';
 import { ProjectComponent } from './components/project/project.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
-  declarations: [BriefcaseItemComponent, BriefcaseComponent, ProjectComponent],
+  declarations: [BriefcaseComponent, ProjectComponent],
   imports: [
     CommonModule,
-    BriefcaseRoutingModule
+    BriefcaseRoutingModule,
+    SharedModule
   ]
 })
 export class BriefcaseModule { }
