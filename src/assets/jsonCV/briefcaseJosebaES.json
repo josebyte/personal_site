@@ -1,10 +1,18 @@
 [
   {
     "title": "Master of stars",
-    "desc": "",
+    "desc": "Web del trabajo de fin de grado",
+    "image": "masterofstars.jpg",
+    "web": "http://www.masterofstars.com",
+    "youtubevideo": "aTBBw17_ScU",
+    "tech": []
+  },
+  {
+    "title": "Master of stars",
+    "desc": "App del trabajo de fin de grado",
     "image": "masterofstars2.jpg",
     "web": "http://www.masterofstars.com",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3",  "js", "bootstrap", "php", "mysql"
     ]
@@ -12,9 +20,9 @@
   {
     "title": "Muviment",
     "desc": "",
-    "image": "muviment.jpg",
+    "image": "muviment.svg",
     "web": "http://www.masterofstars.com",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3", "js", "bootstrap", "php", "mysql"
     ]
@@ -24,7 +32,7 @@
     "desc": "",
     "image": "selfoil.jpg",
     "web": "http://www.masterofstars.com",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3", "bootstrap", "js", "php", "mysql"
     ]
@@ -34,7 +42,7 @@
     "desc": "",
     "image": "boardzona.jpg",
     "web": "http://www.boardzona.com",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3", "bootstrap", "js", "php", "mysql"
     ]
@@ -44,7 +52,7 @@
     "desc": "",
     "image": "canalciclismo.jpg",
     "web": "http://www.canalciclismo.com",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3", "bootstrap", "js", "php", "mysql"
     ]
@@ -54,7 +62,7 @@
     "desc": "",
     "image": "fitnesszona.jpg",
     "web": "http://www.fitnesszona.com",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3", "bootstrap", "js", "php", "mysql"
     ]
@@ -64,7 +72,7 @@
     "desc": "",
     "image": "bikezona.jpg",
     "web": "http://www.bikezona.com",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3", "bootstrap", "js", "php", "mysql"
     ]
@@ -74,7 +82,7 @@
     "desc": "",
     "image": "bikezonatv.jpg",
     "web": "http://www.bikezona.tv",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3", "bootstrap", "js", "php", "mysql"
     ]
@@ -84,7 +92,7 @@
     "desc": "",
     "image": "canalchic.jpg",
     "web": "http://www.canalchic.com",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3", "js", "bootstrap",  "php", "mysql"
     ]
@@ -94,7 +102,7 @@
     "desc": "Programación, maquetación y diseño con un compañero. En ForoDigital.",
     "image": "sailingzona.jpg",
     "web": "http://www.sailingzona.com",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3", "js", "bootstrap", "php", "mysql"
     ]
@@ -104,7 +112,7 @@
     "desc": "Programación, maquetación y diseño con un compañero. En ForoDigital.",
     "image": "lifezona.jpg",
     "web": "http://www.lifezona.com",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3", "js", "bootstrap", "php", "mysql"
     ]
@@ -114,7 +122,7 @@
     "desc": "Programación, maquetación y diseño con un compañero. En ForoDigital.",
     "image": "forodigitale.jpg",
     "web": "http://www.forodigitale.com",
-    "video": "",
+    "youtubevideo": "",
     "tech": [
       "html5", "css3", "bootstrap", "js", "jquery", "php", "mysql"
     ]

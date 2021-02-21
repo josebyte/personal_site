@@ -23,6 +23,9 @@ body
 
 //Header styles:
 
+.navbar
+  padding: 0
+
 .navbar-brand
   margin: 0
   padding-left: 6px
@@ -37,6 +40,12 @@ body
 .nav-link
   padding: 0.5rem 0.25em 0 0.25em !important
 
+.nav-item.active
+  color: black
+  border: solid 2px black
+.active .nav-link
+  color: black !important
+
 .nav-item:hover
   color: $primary !important
   background-color: $blue-100
@@ -44,8 +53,6 @@ body
   .nav-link
     color: $primary !important
 
-.navbar
-  padding: 0
 
 .nav-photo
   width: 74px
@@ -84,11 +91,11 @@ a, .flag
 
 .sectionTitle h1
   font-style: italic
-  font-size: 1.8em
+  font-size: 1.6em
   color: #0099e8
 
 h2
-  font-size: 1.6em
+  font-size: 1.4em
 
 section, app-section
   border-top: 1px solid #dedede
